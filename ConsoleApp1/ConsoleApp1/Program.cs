@@ -21,7 +21,7 @@ namespace ConsoleApp1
             int draw = Convert.ToInt32(Console.ReadLine()); //获取出题量
             Console.WriteLine("要生多少以内的计算题(0~100之内)");
             int difficulty = Convert.ToInt32(Console.ReadLine()); //获取出题量 
-            //Console.WriteLine("请输入要生成题的运算符");
+           
             var str = "";
             for (int s = 0; s < draw; s++)
             {
@@ -31,8 +31,8 @@ namespace ConsoleApp1
                 str = Class1.formula(dt, number, difficulty, operatos, operatos1, nubere_shu)+"\r\n";
 
             }
-            var newTxtPathT = "D:\\Exercise.txt";
-            var newTxtPathD = "D:\\Answer.txt";
+            var newTxtPathT = "E:\\Exercise.txt";
+            var newTxtPathD = "E:\\Answer.txt";
             StreamWriter sw1 = new StreamWriter(newTxtPathT, false, Encoding.Default);
             StreamWriter sw2 = new StreamWriter(newTxtPathD, false, Encoding.Default);
 
@@ -44,6 +44,7 @@ namespace ConsoleApp1
             sw2.Write(str);
             sw2.Flush();
             sw2.Close();
+
 
             Console.ReadKey();
         }
