@@ -5,3 +5,10 @@ D:\github\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csprojAssemblyReference.
 D:\github\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
 D:\github\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
 D:\github\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+E:\git库\SE\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+E:\git库\SE\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+E:\git库\SE\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+E:\git库\SE\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csprojAssemblyReference.cache
+E:\git库\SE\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+E:\git库\SE\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+E:\git库\SE\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

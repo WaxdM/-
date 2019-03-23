@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,13 +20,31 @@ namespace ConsoleApp1
             Console.WriteLine("要生成多少题，最多支持10000题");
             int draw = Convert.ToInt32(Console.ReadLine()); //获取出题量
             Console.WriteLine("要生多少以内的计算题(0~100之内)");
-            int difficulty = Convert.ToInt32(Console.ReadLine()); //获取出题量                                                                 
+            int difficulty = Convert.ToInt32(Console.ReadLine()); //获取出题量 
+            //Console.WriteLine("请输入要生成题的运算符");
+            var str = "";
             for (int s = 0; s < draw; s++)
             {
 
                 int nubere_shu = number.Next(1, 4);
                 Console.WriteLine(Class1.formula(dt, number, difficulty, operatos, operatos1, nubere_shu));
+                str = Class1.formula(dt, number, difficulty, operatos, operatos1, nubere_shu)+"\r\n";
+
             }
+            var newTxtPathT = "D:\\Exercise.txt";
+            var newTxtPathD = "D:\\Answer.txt";
+            StreamWriter sw1 = new StreamWriter(newTxtPathT, false, Encoding.Default);
+            StreamWriter sw2 = new StreamWriter(newTxtPathD, false, Encoding.Default);
+
+            sw1.Write(str);
+
+            sw1.Flush();
+            sw1.Close();
+
+            sw2.Write(str);
+            sw2.Flush();
+            sw2.Close();
+
             Console.ReadKey();
         }
     }
